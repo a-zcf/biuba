@@ -2,7 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Mobile from './Mobile'
-import router from './router';
+import router from './router'
 
 Vue.config.productionTip = false
 
@@ -12,4 +12,3 @@ new Vue({
   router,
   render: h => h(Mobile)
 })
- 
