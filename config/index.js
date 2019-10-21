@@ -42,7 +42,6 @@ module.exports = {
 
     cssSourceMap: true
   },
- 
   build: {
     // Template for index.html
     admin: path.resolve(__dirname, '../dist/a_index.html'),

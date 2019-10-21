@@ -20,12 +20,12 @@ const createLintingRule = () => ({
 })
 
 module.exports = {
-  context:path.resolve(__dirname,'../'),
+  context: path.resolve(__dirname, '../'),
   // 配置三个入口文件admin、mobile、pc
-  entry: { 
-    admin:path.resolve(__dirname,'../src/pages/admin/main.js'),
-    mobile:path.resolve(__dirname,'../src/pages/mobile/main.js'),
-    pc:path.resolve(__dirname,'../src/pages/pc/main.js'),
+  entry: {
+    admin: path.resolve(__dirname, '../src/pages/admin/main.js'),
+    mobile: path.resolve(__dirname, '../src/pages/mobile/main.js'),
+    pc: path.resolve(__dirname, '../src/pages/pc/main.js')
   },
   output: {
     path: config.build.assetsRoot,
@@ -33,12 +33,12 @@ module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
-  }, 
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {

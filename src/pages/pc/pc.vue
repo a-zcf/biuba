@@ -12,7 +12,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import './styles/index.less';
 #pc {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
